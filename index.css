@@ -6,7 +6,13 @@
   font-family: "Geist";
   src: url("/assets/fonts/Geist[wght].ttf");
 }
-
+@font-face {
+  font-family: "NotoSans";
+  src: url("/assets/fonts/NotoSansEthiopic.ttf");
+}
+* {
+  transition: all 200ms ease;
+}
 .bf-button {
   border-radius: 5px;
   padding: 0.5em 1em;
@@ -40,7 +46,14 @@ section {
   background: url(/assets/img/main_bg.png);
   background-size: cover;
 }
-
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.collapsible-content.show {
+  max-height: 600px;
+}
 @media only screen and (max-width: 899px) {
   .hero-sec::after {
     background: none;

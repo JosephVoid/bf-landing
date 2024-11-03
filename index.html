@@ -16,32 +16,79 @@
         <img class="h-12" src="/assets/logo/bf-logo-official.svg" alt="" />
       </div>
       <div class="flex justify-evenly gap-8 text-xl">
-        <div class="text-bf-primary font-bold">Buyer</div>
-        <div>Merchant</div>
+        <div
+          class="text-bf-primary font-bold cursor-pointer hover:font-semibold"
+          id="buyer_button"
+          data-i18n="nav.buyer"
+        >
+          Buyer
+        </div>
+        <div
+          data-i18n="nav.merchant"
+          class="cursor-pointer hover:font-semibold"
+          id="merchant_button"
+        >
+          Merchant
+        </div>
       </div>
       <div class="flex items-center gap-6">
         <div class="flex gap-4 font-bold text-xl mr-8">
-          <div class="opacity-50">አማ</div>
-          <div>EN</div>
+          <div class="opacity-50 cursor-pointer" id="amharic_button">አማ</div>
+          <div class="cursor-pointer" id="english_button">EN</div>
         </div>
         <div class="flex gap-4">
-          <button class="bf-button bf-pr">Get Started</button
-          ><button class="bf-button bf-sec">Login</button>
+          <button
+            data-i18n="nav.get_started"
+            class="bf-button bf-pr"
+            id="get_started_button_nav"
+          >
+            Get Started</button
+          ><button
+            data-i18n="nav.login"
+            class="bf-button bf-sec"
+            id="login_button_nav"
+          >
+            Login
+          </button>
         </div>
       </div>
     </nav>
     <!-- Mobile Nav -->
-    <nav class="desk:hidden p-5 justify-between flex items-center border-b-2">
-      <div>
-        <img class="h-12" src="/assets/logo/bf-logo-official.svg" alt="" />
-      </div>
-      <div class="flex gap-4 items-center">
-        <div class="flex gap-4 font-bold">
-          <div class="opacity-50">አማ</div>
-          <div>EN</div>
-        </div>
+    <nav class="desk:hidden p-5 flex flex-col border-b-2">
+      <div class="flex items-center justify-between w-full">
         <div>
-          <img src="/assets/img/menu.svg" class="h-8" alt="" />
+          <img class="h-12" src="/assets/logo/bf-logo-official.svg" alt="" />
+        </div>
+        <div class="flex gap-4 items-center">
+          <div class="flex gap-4 font-bold">
+            <div class="opacity-50 cursor-pointer" id="amharic_button_mob">
+              አማ
+            </div>
+            <div class="cursor-pointer" id="english_button_mob">EN</div>
+          </div>
+          <div class="cursor-pointer" id="ham_nav_button">
+            <img src="/assets/img/menu.svg" class="h-8" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="collapse_div" class="collapsible-content w-full">
+        <div class="p-4 mt-5 rounded-md bg-bf-light-blue">
+          <div
+            data-i18n="nav.buyer"
+            class="bg-bf-primary text-white p-2 rounded-md"
+          >
+            Buyer
+          </div>
+          <div data-i18n="nav.merchant" class="p-2" id="merchant_button_mob">
+            Merchant
+          </div>
+          <hr class="border-[1px] border-bf-grey opacity-25" />
+          <div data-i18n="nav.signup" class="p-2" id="signup_button_nav_mob">
+            Sign Up
+          </div>
+          <div data-i18n="nav.login" class="p-2" id="login_button_nav_mob">
+            Log In
+          </div>
         </div>
       </div>
     </nav>
@@ -54,37 +101,56 @@
       >
         <div class="text-center">
           <span class="font-bold text-bf-primary text-2xl">1k+</span>
-          <p class="font-light">Merchants</p>
+          <p data-i18n="hero.merchants" class="font-light">Merchants</p>
         </div>
         <div class="text-center">
           <span class="font-bold text-bf-primary text-2xl">5k+</span>
-          <p class="font-light">Buyers</p>
+          <p data-i18n="hero.buyers" class="font-light">Buyers</p>
         </div>
         <div class="text-center">
           <span class="font-bold text-bf-primary text-2xl">50k+</span>
-          <p class="font-light">Desires fullfiled</p>
+          <p data-i18n="hero.desires_fulf" class="font-light">
+            Desires fullfiled
+          </p>
         </div>
       </div>
       <div
-        class="desk:text-6xl mob:text-4xl font-bold desk:w-2/3 mob:w-full text-center leading-tight mb-4"
+        class="en_only desk:text-6xl mob:text-4xl font-bold desk:w-2/3 mob:w-full text-center leading-tight mb-4"
       >
         <span class="text-bf-primary">Post</span> To Let Merchants Know What
         <span class="text-bf-primary">You</span>
         Want!
       </div>
-      <div class="text-bf-grey w-2/3 text-center desk:text-xl mb-8">
+      <div
+        class="am_only desk:text-6xl mob:text-4xl font-bold desk:w-2/3 mob:w-full text-center leading-tight mb-4"
+      >
+        ለነጋዴዎች <span class="text-bf-primary">ፍላጎቶውን</span> ለማሳወቅ
+        <span class="text-bf-primary">ፖስት</span> ያድርጉ!
+      </div>
+      <div
+        data-i18n="hero.sub"
+        class="text-bf-grey w-2/3 text-center desk:text-xl mb-8"
+      >
         Post what you want to buy, and merchants compete with offers. This way,
         you can save time, get better deals, and easily find hard-to-get items!
       </div>
       <div class="mob:w-full flex justify-center">
-        <button class="bf-button bf-pr mob:w-4/5">Get Started for FREE</button>
+        <button
+          data-i18n="hero.get_started_for_free"
+          class="bf-button bf-pr mob:w-4/5"
+        >
+          Get Started for FREE
+        </button>
       </div>
     </section>
 
     <section
       class="desk:p-20 mob:p-4 mob:mt-20 flex flex-col items-center gap-12"
     >
-      <div class="desk:text-5xl mob:text-3xl font-bold text-center">
+      <div
+        data-i18n="sec2.main"
+        class="desk:text-5xl mob:text-3xl font-bold text-center"
+      >
         See how it works
       </div>
       <div class="desk:w-2/3 mob:w-full desk:h-[80vh] mob:h-[40vh]">
@@ -97,9 +163,14 @@
     </section>
 
     <section class="desk:p-20 mob:p-4 mob:mt-20 flex flex-col items-center">
-      <p class="desk:text-4xl mob:text-3xl font-semibold text-center">
+      <p class="en_only desk:text-4xl mob:text-3xl font-semibold text-center">
         Shopping can be <span class="text-bf-primary">frustrating</span> and
         <span class="text-bf-primary">time-consuming</span>.
+      </p>
+      <p class="am_only desk:text-4xl mob:text-3xl font-semibold text-center">
+        ገበያ መሄድ <span class="text-bf-primary">ጊዜ የሚፈጅ</span> ፣
+        <span class="text-bf-primary">አድካሚ</span> እና
+        <span class="text-bf-primary">አሰልቺ</span> ሊሆን ይችላል።
       </p>
       <div class="flex-col flex desk:w-2/3 mt-6 gap-4">
         <div class="flex gap-4 mob:flex-col">
@@ -112,8 +183,10 @@
               alt=""
               srcset=""
             />
-            Finding niche items that aren't available in most shops is nearly
-            impossible.
+            <p data-i18n="sec3.item_1">
+              Finding niche items that aren't available in most shops is nearly
+              impossible.
+            </p>
           </div>
           <div
             class="border-[1px] rounded-md p-8 desk:w-1/2 text-center flex flex-col items-center text-bf-grey text-xl"
@@ -124,7 +197,9 @@
               alt=""
               srcset=""
             />
-            Shops might charge you more based on how you look or talk.
+            <p data-i18n="sec3.item_2">
+              Shops might charge you more based on how you look or talk.
+            </p>
           </div>
         </div>
         <div
@@ -136,8 +211,10 @@
             alt=""
             srcset=""
           />
-          Searching for a fair price on an item among thousands of merchants is
-          exhausting in-person or online.
+          <p data-i18n="sec3.item_3">
+            Searching for a fair price on an item among thousands of merchants
+            is exhausting in-person or online.
+          </p>
         </div>
       </div>
     </section>
@@ -146,12 +223,18 @@
       class="hero-sec flex flex-col items-center desk:p-20 mob:p-4 mob:mt-20"
     >
       <div
-        class="desk:text-5xl mob:text-4xl font-bold w-2/3 text-center leading-tight mb-4 desk:mt-32"
+        class="en_only desk:text-5xl mob:text-4xl font-bold w-2/3 text-center leading-tight mb-4 desk:mt-32"
       >
         <span class="text-bf-primary">Stop searching</span>—post your desire,
         and
         <span class="text-bf-primary">merchants will come to you</span>
         .
+      </div>
+      <div
+        class="am_only desk:text-5xl mob:text-4xl font-bold w-2/3 text-center leading-tight mb-4 desk:mt-32"
+      >
+        <span class="text-bf-primary">ፍለጋው ይቁም</span> ፤ ፍላጎትዎን ይፖስቱ እና
+        <span class="text-bf-primary">ነጋዴዎች ወደ እርስዎ ይመጣሉ።</span>
       </div>
     </section>
 
@@ -160,6 +243,7 @@
         class="desk:w-2/3 desk:h-2/3 bg-bf-primary rounded-lg flex flex-col items-center justify-center mob:p-6"
       >
         <p
+          data-i18n="sec5.top"
           class="desk:text-4xl mob:text-2xl font-bold text-white mb-4 text-center"
         >
           Join 100+ buyers that have
@@ -170,10 +254,16 @@
           <div class="rounded-md bg-white text-4xl p-4 font-bold">3</div>
           <div class="rounded-md bg-white text-4xl p-4 font-bold">5</div>
         </div>
-        <p class="desk:text-4xl mob:text-2xl font-bold text-white mb-4">
+        <p
+          data-i18n="sec5.bottom"
+          class="desk:text-4xl mob:text-2xl font-bold text-white mb-4"
+        >
           desires fullfiled.
         </p>
-        <button class="bg-bf-bg rounded-md px-4 py-2 mt-8">
+        <button
+          data-i18n="sec5.button"
+          class="bg-bf-bg rounded-md px-4 py-2 mt-8"
+        >
           Get Started for FREE
         </button>
       </div>
@@ -238,5 +328,7 @@
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
+    <script src="i18n.js"></script>
   </body>
 </html>
