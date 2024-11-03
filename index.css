@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Geist";
+  src: url("/assets/fonts/Geist[wght].ttf");
+}
+
+.bf-button {
+  border-radius: 10px;
+  padding: 0.5em 1em;
+}
+.bf-pr {
+  background-color: #005596;
+  color: white;
+}
+.bf-sec {
+  background-color: transparent;
+  outline: 1px solid #b0cade;
+  color: black;
+}
