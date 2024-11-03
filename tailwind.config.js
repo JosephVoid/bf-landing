@@ -14,6 +14,12 @@ export default {
       },
       backgroundImage: {
         'hero': "url('/assets/img/main_bg.png')"
+      },
+      screens: {
+        'mob': {
+          max: '899px'
+        },
+        'desk': '900px'
       }
     },
   },
