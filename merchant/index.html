@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.ico" />
+    <link rel="stylesheet" href="../index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Buyers First</title>
     <meta
@@ -25,7 +25,7 @@
       </div>
       <div class="flex justify-evenly gap-8 text-xl">
         <div
-          class="text-bf-primary font-bold cursor-pointer hover:font-semibold"
+          class="cursor-pointer hover:font-semibold"
           id="buyer_button"
           data-i18n="nav.buyer"
         >
@@ -33,7 +33,7 @@
         </div>
         <div
           data-i18n="nav.merchant"
-          class="cursor-pointer hover:font-semibold"
+          class="cursor-pointer hover:font-semibold text-bf-primary font-bold"
           id="merchant_button"
         >
           Merchant
@@ -81,15 +81,10 @@
       </div>
       <div id="collapse_div" class="collapsible-content w-full">
         <div class="p-4 mt-5 rounded-md bg-bf-light-blue">
-          <div
-            data-i18n="nav.buyer"
-            class="bg-bf-primary text-white p-2 rounded-md"
-          >
-            Buyer
-          </div>
+          <div data-i18n="nav.buyer" class="p-2 cursor-pointer">Buyer</div>
           <div
             data-i18n="nav.merchant"
-            class="p-2 cursor-pointer"
+            class="p-2 bg-bf-primary text-white rounded-md"
             id="merchant_button_mob"
           >
             Merchant
@@ -137,15 +132,15 @@
       <div
         class="en_only desk:text-6xl mob:text-4xl font-bold desk:w-2/3 mob:w-full text-center leading-tight mb-4"
       >
-        <span class="text-bf-primary">Post</span> To Let Merchants Know What
-        <span class="text-bf-primary">You</span>
-        Want!
+        <span class="text-bf-primary">Reach</span> Buyers and
+        <span class="text-bf-primary">Offer</span>
+        What They Need!
       </div>
       <div
         class="am_only desk:text-6xl mob:text-4xl font-bold desk:w-2/3 mob:w-full text-center leading-tight mb-4"
       >
-        ለነጋዴዎች <span class="text-bf-primary">ፍላጎቶውን</span> ለማሳወቅ
-        <span class="text-bf-primary">ፖስት</span> ያድርጉ!
+        ገዥዎችን <span class="text-bf-primary">ያግኙ</span> እና
+        <span class="text-bf-primary">የሚያስፈልጋቸውን</span> ያቅርቡ!
       </div>
       <div
         data-i18n="hero.sub"
@@ -154,13 +149,20 @@
         Post what you want to buy, and merchants compete with offers. This way,
         you can save time, get better deals, and easily find hard-to-get items!
       </div>
-      <div class="mob:w-full flex justify-center">
+      <div class="mob:w-full flex justify-center gap-6">
         <button
           data-i18n="hero.get_started_for_free"
           class="bf-button bf-pr mob:w-4/5"
           id="get_started_button"
         >
-          Get Started for FREE
+          Get Started
+        </button>
+        <button
+          data-i18n="hero.look_at_desires"
+          class="bf-button bf-sec mob:w-4/5"
+          id="see_buyers_button"
+        >
+          See Buyers
         </button>
       </div>
     </section>
@@ -184,14 +186,17 @@
     </section>
 
     <section class="desk:p-20 mob:p-4 mob:mt-20 flex flex-col items-center">
-      <p class="en_only desk:text-4xl mob:text-3xl font-semibold text-center">
-        Shopping can be <span class="text-bf-primary">frustrating</span> and
-        <span class="text-bf-primary">time-consuming</span>.
+      <p
+        class="en_only desk:text-4xl mob:text-3xl font-semibold text-center desk:w-2/3"
+      >
+        Hesitant buyers and unclear demand make you
+        <span class="text-bf-primary">unsure</span> about what to offer..
       </p>
-      <p class="am_only desk:text-4xl mob:text-3xl font-semibold text-center">
-        ገበያ መሄድ <span class="text-bf-primary">ጊዜ የሚፈጅ</span> ፣
-        <span class="text-bf-primary">አድካሚ</span> እና
-        <span class="text-bf-primary">አሰልቺ</span> ሊሆን ይችላል።
+      <p
+        class="am_only desk:text-4xl mob:text-3xl font-semibold text-center desk:w-2/3"
+      >
+        የሚያመነቱ ገዢዎች እና ግልጽ ያልሆነ የገበያ ፍላጎት ምን እንደሚያቀርቡ
+        <span class="text-bf-primary">እርግጠኛ እንዳይሆኑ</span> ያደርጉዎታል።
       </p>
       <div class="flex-col flex desk:w-2/3 mt-6 gap-4">
         <div class="flex gap-4 mob:flex-col">
@@ -199,7 +204,7 @@
             class="border-[1px] rounded-md p-8 desk:w-1/2 text-center flex flex-col items-center text-bf-grey text-xl"
           >
             <img
-              src="assets/img/tears.svg"
+              src="../assets/img/pensive-face.svg"
               class="w-12 mb-2"
               alt=""
               srcset=""
@@ -213,7 +218,7 @@
             class="border-[1px] rounded-md p-8 desk:w-1/2 text-center flex flex-col items-center text-bf-grey text-xl"
           >
             <img
-              src="assets/img/wings.svg"
+              src="../assets/img/thinking-face.svg"
               class="w-12 mb-2"
               alt=""
               srcset=""
@@ -227,7 +232,7 @@
           class="border-[1px] rounded-md p-8 text-center flex flex-col items-center text-bf-grey text-xl"
         >
           <img
-            src="assets/img/head-bandage.svg"
+            src="../assets/img/spiral-eyes.svg"
             class="w-12 mb-2"
             alt=""
             srcset=""
@@ -246,16 +251,16 @@
       <div
         class="en_only desk:text-5xl mob:text-4xl font-bold w-2/3 text-center leading-tight mb-4 desk:mt-32"
       >
-        <span class="text-bf-primary">Stop searching</span>—post your desire,
-        and
-        <span class="text-bf-primary">merchants will come to you</span>
+        Get <span class="text-bf-primary">serious customers</span> and
+        <span class="text-bf-primary">confidently</span> source products backed
+        by <span class="text-bf-primary">demand</span>
         .
       </div>
       <div
         class="am_only desk:text-5xl mob:text-4xl font-bold w-2/3 text-center leading-tight mb-4 desk:mt-32"
       >
-        <span class="text-bf-primary">ፍለጋው ይቁም</span> ፤ ፍላጎትዎን ይፖስቱ እና
-        <span class="text-bf-primary">ነጋዴዎች ወደ እርስዎ ይመጣሉ።</span>
+        <span class="text-bf-primary">በገበያ ፍላጎት</span> መሰረት ሽቀጦችን ያቅርቡ እና
+        <span class="text-bf-primary">አዳዲስ ደንበኞችን</span>ያፍሩ!
       </div>
     </section>
 
@@ -267,7 +272,7 @@
           data-i18n="sec5.top"
           class="desk:text-4xl mob:text-2xl font-bold text-white mb-4 text-center"
         >
-          Join 200+ buyers that have
+          Join 100+ buyers that have
         </p>
         <div class="flex desk:gap-5 mob:gap-2 justify-center mb-4">
           <div class="rounded-md bg-white text-4xl p-4 font-bold">0</div>
@@ -350,7 +355,7 @@
         </div>
       </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
     <script src="i18n.js"></script>
   </body>
 </html>
