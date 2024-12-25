@@ -24,7 +24,7 @@ let elementIdHandlerMap = {
     'get_started_button_nav': () => redirector('https://app.buyersfirst.et?signup=true'),
     'login_button_nav': () => redirector('https://app.buyersfirst.et?login=true'),
     'signup_button_nav_mob': () => redirector('https://app.buyersfirst.et?signup=true'),
-    'login_button_nav_mob': redirector('https://app.buyersfirst.et?login=true'),
+    'login_button_nav_mob': () => redirector('https://app.buyersfirst.et?login=true'),
     'get_started_button': () => redirector('https://app.buyersfirst.et?signup=true'),
     'see_buyers_button': () => redirector('https://app.buyersfirst.et')
 }
